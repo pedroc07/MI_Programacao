@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddCursoController">
+   <children>
+      <AnchorPane layoutX="-13.0" prefHeight="417.0" prefWidth="648.0" style="-fx-background-color: #56ff86;">
+         <children>
+            <Button fx:id="ConfirmBotao" layoutX="295.0" layoutY="368.0" mnemonicParsing="false" onAction="#Adicionar" style="-fx-background-color: #ffffff;" text="OK" />
+            <Label layoutX="222.0" layoutY="231.0" prefHeight="26.0" prefWidth="85.0" text="Nome:" />
+            <TextField fx:id="CursoNome" layoutX="262.0" layoutY="231.0" />
+            <TextField fx:id="CursoCarga" layoutX="262.0" layoutY="281.0" />
+            <Label layoutX="179.0" layoutY="281.0" prefHeight="26.0" prefWidth="85.0" text="Carga Horária:" />
+            <Label fx:id="Titulo" layoutX="235.0" layoutY="104.0" prefHeight="50.0" prefWidth="178.0" text="ADICIONAR CURSO">
+               <font>
+                  <Font name="The Font Against Giygas" size="33.0" />
+               </font></Label>
+            <ChoiceBox fx:id="CursoTurmas" layoutX="262.0" layoutY="327.0" prefWidth="150.0" />
+            <Label layoutX="210.0" layoutY="327.0" prefHeight="26.0" prefWidth="85.0" text="Turmas:" />
+            <Button fx:id="TurmaBotao" layoutX="441.0" layoutY="328.0" mnemonicParsing="false" onAction="#AddTurma" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #ffffff;" text="Adicionar turma" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

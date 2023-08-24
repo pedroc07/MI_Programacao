@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddAlunoController">
+   <children>
+      <AnchorPane layoutX="-13.0" prefHeight="417.0" prefWidth="648.0" style="-fx-background-color: #56ff86;">
+         <children>
+            <Button fx:id="ConfirmBotao" layoutX="295.0" layoutY="368.0" mnemonicParsing="false" onAction="#Adicionar" style="-fx-background-color: #ffffff;" text="OK" />
+            <Label layoutX="220.0" layoutY="209.0" prefHeight="26.0" prefWidth="85.0" text="Nome:" />
+            <TextField fx:id="AlunoNome" layoutX="262.0" layoutY="209.0" />
+            <TextField fx:id="AlunoCpf" layoutX="262.0" layoutY="260.0" />
+            <Label layoutX="227.0" layoutY="259.0" prefHeight="26.0" prefWidth="85.0" text="CPF:" />
+            <Label fx:id="Titulo" layoutX="235.0" layoutY="105.0" prefHeight="56.0" prefWidth="192.0" text="ADICIONAR ALUNO">
+               <font>
+                  <Font name="The Font Against Giygas" size="36.0" />
+               </font></Label>
+            <TextField fx:id="AlunoMatricula" layoutX="262.0" layoutY="311.0" />
+            <Label layoutX="201.0" layoutY="311.0" prefHeight="26.0" prefWidth="85.0" text="Matrícula:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

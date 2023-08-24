@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="417.0" prefWidth="648.0" style="-fx-background-color: #61bdff;">
+         <children>
+            <Label layoutX="227.0" layoutY="25.0" prefHeight="50.0" prefWidth="199.0" text="RELATÓRIO">
+               <font>
+                  <Font name="Times New Roman" size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="104.0" prefHeight="38.0" prefWidth="370.0" text="Ops, não temos relatórios de alunos :p">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="308.0" layoutY="172.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" text="OK" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="434.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InterfaceController">
+   <children>
+      <TabPane layoutY="3.0" prefHeight="434.0" prefWidth="566.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cadastro de professores">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="443.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="4.0" prefHeight="33.0" prefWidth="237.0" text="Cadastro de professores">
+                           <font>
+                              <Font name="Times New Roman" size="23.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="NovoProfessor" layoutX="424.0" layoutY="213.0" mnemonicParsing="false" onAction="#AddProfessor" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #0ec940;" text="ADICIONAR">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font></Button>
+                        <TableView fx:id="TabelaProfessor" layoutX="14.0" layoutY="47.0" prefHeight="332.0" prefWidth="386.0">
+                          <columns>
+                            <TableColumn fx:id="ProfCpf" prefWidth="75.0" text="CPF" />
+                            <TableColumn fx:id="ProfNome" prefWidth="75.0" text="Nome" />
+                              <TableColumn fx:id="ProfEditar" prefWidth="75.0" text="Editar" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="RemoverProf" layoutX="424.0" layoutY="263.0" mnemonicParsing="false" onAction="#RemoveProfessor" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #f81010;" text="REMOVER">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font></Button>
+                        <Button fx:id="RelatProfBotao" layoutX="424.0" layoutY="313.0" mnemonicParsing="false" onAction="#RelatorioProfessor" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #5bb0f2;" text="RELATORIO">
+                           <font>
+                              <Font name="The Font Against Giygas" size="28.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Cadastro de alunos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="443.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="4.0" prefHeight="30.0" prefWidth="184.0" text="Cadastro de alunos">
+                           <font>
+                              <Font name="Times New Roman" size="23.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="TabelaAluno" layoutX="14.0" layoutY="47.0" prefHeight="332.0" prefWidth="386.0">
+                           <columns>
+                              <TableColumn fx:id="AlunoCpf" prefWidth="75.0" text="CPF" />
+                              <TableColumn fx:id="AlunoNome" prefWidth="75.0" text="Nome" />
+                              <TableColumn fx:id="AlunoMatricula" prefWidth="75.0" text="Matrícula" />
+                              <TableColumn fx:id="AlunoEditar" prefWidth="75.0" text="Editar" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="NovoAluno" layoutX="424.0" layoutY="213.0" mnemonicParsing="false" onAction="#AddAluno" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #0ec940;" text="ADICIONAR">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RemoverAluno" layoutX="424.0" layoutY="263.0" mnemonicParsing="false" onAction="#RemoveAluno" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #f81010;" text="REMOVER">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RelatAunoBotao" layoutX="424.0" layoutY="313.0" mnemonicParsing="false" onAction="#RelatorioAluno" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #5bb0f2;" text="RELATORIO">
+                           <font>
+                              <Font name="The Font Against Giygas" size="28.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Cadastro de cursos">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="443.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="4.0" prefHeight="30.0" prefWidth="235.0" text="Cadastro de cursos">
+                           <font>
+                              <Font name="Times New Roman" size="23.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="TabelaCurso" layoutX="14.0" layoutY="47.0" prefHeight="332.0" prefWidth="386.0">
+                           <columns>
+                              <TableColumn fx:id="CursoNome" prefWidth="75.0" text="Nome" />
+                              <TableColumn fx:id="CursoCarga" prefWidth="103.0" text="Carga horária" />
+                              <TableColumn fx:id="CursoTurmas" prefWidth="72.0" text="Turmas" />
+                              <TableColumn fx:id="CursoEditar" prefWidth="75.0" text="Editar" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="NovoCurso" layoutX="424.0" layoutY="213.0" mnemonicParsing="false" onAction="#AddCurso" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #0ec940;" text="ADICIONAR">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RemoverCurso" layoutX="424.0" layoutY="263.0" mnemonicParsing="false" onAction="#RemoveCurso" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #f81010;" text="REMOVER">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RelatCursoBotao" layoutX="424.0" layoutY="313.0" mnemonicParsing="false" onAction="#RelatorioCurso" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #5bb0f2;" text="RELATORIO">
+                           <font>
+                              <Font name="The Font Against Giygas" size="28.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Cadastro de turmas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="443.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="4.0" prefHeight="30.0" prefWidth="186.0" text="Cadastro de turmas">
+                           <font>
+                              <Font name="Times New Roman" size="23.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="TabelaTurma" layoutX="14.0" layoutY="47.0" prefHeight="332.0" prefWidth="386.0">
+                           <columns>
+                              <TableColumn fx:id="TurmaCodigo" prefWidth="75.0" text="Código" />
+                              <TableColumn fx:id="TurmaDia" prefWidth="75.0" text="Dia" />
+                              <TableColumn fx:id="TurmaHorario" prefWidth="75.0" text="Horário" />
+                              <TableColumn fx:id="TurmaEditar" prefWidth="75.0" text="Editar" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="NovaTurma" layoutX="424.0" layoutY="213.0" mnemonicParsing="false" onAction="#AddTurma" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #0ec940;" text="ADICIONAR">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RemoverTurma" layoutX="424.0" layoutY="263.0" mnemonicParsing="false" onAction="#RemoveTurma" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #f81010;" text="REMOVER">
+                           <font>
+                              <Font name="The Font Against Giygas" size="29.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="RelatTurmaBotao" layoutX="424.0" layoutY="313.0" mnemonicParsing="false" onAction="#RelatorioTurma" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: #5bb0f2;" text="RELATORIO">
+                           <font>
+                              <Font name="The Font Against Giygas" size="28.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

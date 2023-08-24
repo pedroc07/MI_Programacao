@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="427.0" style="-fx-background-color: #ff4949;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RemoverAlunoController">
+   <children>
+      <TextField fx:id="AlunoMatricula" layoutX="139.0" layoutY="123.0" onAction="#Remover" />
+      <Label layoutX="80.0" layoutY="123.0" prefHeight="25.0" prefWidth="59.0" text="Matrícula:" />
+      <Button fx:id="ConfirmBotao" layoutX="188.0" layoutY="210.0" mnemonicParsing="false" onAction="#Remover" text="OK" />
+      <Label layoutX="133.0" layoutY="45.0" prefHeight="43.0" prefWidth="176.0" text="REMOVER ALUNO">
+         <font>
+            <Font name="The Font Against Giygas" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

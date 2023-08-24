@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RelatorioProfController">
+   <children>
+      <AnchorPane layoutX="-13.0" prefHeight="417.0" prefWidth="648.0" style="-fx-background-color: #61bdff;">
+         <children>
+            <Button fx:id="ConfirmBotao" layoutX="426.0" layoutY="90.0" mnemonicParsing="false" onAction="#ExibirTurmas" style="-fx-background-color: #ffffff;" text="OK" />
+            <Label layoutX="162.0" layoutY="90.0" prefHeight="26.0" prefWidth="100.0" text="CPF do professor:" />
+            <TextField fx:id="ProfCpf" layoutX="262.0" layoutY="90.0" />
+            <Label layoutX="227.0" layoutY="25.0" prefHeight="50.0" prefWidth="199.0" text="RELATÓRIO">
+               <font>
+                  <Font name="Times New Roman" size="34.0" />
+               </font>
+            </Label>
+            <TableView fx:id="TabelaTurma" layoutX="114.0" layoutY="168.0" prefHeight="224.0" prefWidth="446.0">
+              <columns>
+                <TableColumn fx:id="TurmaCodigo" prefWidth="75.0" text="Código" />
+                <TableColumn fx:id="TurmaDia" prefWidth="75.0" text="Dia" />
+                  <TableColumn fx:id="TurmaHorario" prefWidth="75.0" text="Horário" />
+              </columns>
+            </TableView>
+            <Label layoutX="114.0" layoutY="142.0" prefHeight="26.0" prefWidth="85.0" text="Turmas">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
